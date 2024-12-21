@@ -1,0 +1,105 @@
+.login-auth-container {
+    display: flex;
+    gap: 1rem;
+    top: 25px;
+    right: 25px;
+    position: absolute;
+    align-items: center;
+}
+
+.signup-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+    position: relative;
+}
+
+.signup-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Underline animation for the Sign Up button */
+.signup-btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: width 1s ease;
+}
+
+.signup-btn:hover::after {
+    width: 100%;
+}
+
+.login-btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Retaining the existing animation styles */
+.codepen-button {
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 3px;
+    isolation: isolate;
+}
+  
+.codepen-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-size: 25% 100%;
+    animation: border-animation 0.75s linear infinite;
+    animation-play-state: paused;
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+    animation-play-state: running;
+    transition-duration: 0.75s;
+    translate: 0% 0%;
+}
+
+@keyframes border-animation {
+    to {
+        transform: translateX(-25%);
+    }
+}
+
+.codepen-button span {
+    position: relative;
+    display: block;
+    padding: 7px 21px;
+    font-size: 1.1rem;
+    background: #000;
+    border-radius: 3px;
+    height: 100%;
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-light: rgb(147, 242, 255);
+    --primary: rgb(111, 188, 197);
+    --primary-bright: rgb(163, 244, 255);
+    --dark-overlay: rgba(7, 7, 33, .9);
+    --accent-blue: rgb(77, 77, 255);
+    --accent-dark-blue: rgb(76, 76, 210);
+    --light-blue: rgb(92, 111, 255);
+    --white: rgb(255, 255, 255);
+    --light-bg: rgb(248, 246, 253);
+    --light-overlay: rgba(215, 217, 255, .8);
+    --lighter-overlay: rgba(204, 207, 255, .5);
+    --dark-bg: rgb(9, 9, 37);
+    --light-white: rgba(255, 255, 255, .5);
+    --lighter-white: rgba(255, 255, 255, .4);
+    --dim-white: rgba(255, 255, 255, .3);
+    --faint-white: rgba(255, 255, 255, .2);
+    --transparent-white: rgba(255, 255, 255, .1);
+    --very-transparent-white: rgba(255, 255, 255, .05);
+    --almost-invisible-white: rgba(255, 255, 255, .03);
+}
+
+
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
