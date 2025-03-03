@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "start":"node server.js", 
+   
   "dependencies": {
     "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
